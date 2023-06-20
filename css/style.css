@@ -1,0 +1,406 @@
+/* CSS Reset */
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Averia+Serif+Libre:wght@300&family=Bree+Serif&family=Dancing+Script&family=PT+Serif+Caption&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Averia+Serif+Libre:wght@300&family=Bree+Serif&family=Dancing+Script&family=Noto+Serif&family=PT+Serif+Caption&family=Press+Start+2P&display=swap');
+
+* {
+    /* box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    margin: 3px 0px 3px -2px; */
+    font-family: 'Averia Serif Libre', cursive;
+}
+
+/* Body */
+
+body {
+    background-color: black;
+}
+
+/* CSS variables */
+:root {
+    --navbar-height: 50px;
+    --navbar-color: rgb(207, 205, 205);
+    --content-color: rgb(246, 241, 222);
+    --border-color: rgb(244, 76, 43);
+}
+
+/* Navigaton bar */
+#navbar {
+    display: flex;
+    position: absolute;
+    top: -10px;
+    align-items: center;
+}
+
+/* Navgantion bar logo */
+#logo {
+    padding-top: 7px;
+    padding-left: 7px;
+    display: inline-block;
+    /* margin: 10px 30px; */
+    /* padding: 2px 2px; */
+}
+
+/* Navgantion bar logo img*/
+#logo img {
+    width: 200px;
+    margin-top: 10px;
+    margin-left: 20px;
+    padding-right: 30px;
+    opacity: .8;
+
+    /* color: var(--navbar-color); */
+    /* top: 2px; */
+    /* display: flex;
+    transform: rotateZ(210deg); */
+}
+
+/* Navigation bar ul */
+#navbar ul {
+    display: flex;
+    align-items: center;
+
+}
+
+/* Navigation bar ui li */
+#navbar ul li {
+    list-style: none;
+    margin-top: 15px;
+    padding: 0px 20px;
+    /* display: inline-block;
+    margin: 2px 30px; */
+}
+
+/* Navigation bar ui li a */
+#navbar ul li a {
+    color: var(--navbar-color);
+    display: block;
+    padding: 0px 10px;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 1.4rem;
+}
+
+#logo img:hover {
+    opacity: 100%;
+    cursor: pointer;
+}
+
+#navbar ul li a:hover {
+    /* background-color: white; */
+    color: rgb(255, 255, 255);
+}
+
+/* Sections */
+/* Home */
+#home {
+    box-sizing: border-box;
+    display: flex;
+    margin: 3px 0px 3px -2px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 1090px;
+    margin: -10px;
+    padding: 0px;
+    /* line-height: 400%; */
+    box-shadow: inset 75px 48px 322px 52px black;
+}
+
+#home::before {
+    content: "";
+    background: url('../img/radiant_dire5.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    z-index: -2;
+    opacity: 1;
+}
+
+/* Utility classes */
+#home h1 {
+    color: rgb(246, 241, 222);
+    text-align: center;
+    margin: -20px;
+    font-size: 6.5rem;
+    text-shadow: 0px 0px 20px black;
+}
+
+#home h3 {
+    color: rgb(255, 254, 254);
+    opacity: .8;
+    text-align: center;
+    margin: 20px;
+    font-size: 3.5rem;
+    text-shadow: 0px 0px 20px black;
+}
+
+p {
+    font-family: 'Noto Serif', serif;
+    color: var(--content-color);
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.5em;
+    /* width: 50%; */
+    text-shadow: 0px 0px 10px black;
+
+}
+
+#home #role-1 {
+    border-top: 4px solid var(--border-color);
+    margin: 15px;
+    border-radius: 30px;
+    display: inline-block;
+    width: 6%;
+
+}
+
+
+#home div {
+
+    width: 70%;
+}
+
+.btn {
+    color: white;
+    margin-top: 40px;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px 20px;
+    font-size: 1.7rem;
+    background-color: transparent;
+    border: 3px solid rgb(146, 145, 145);
+    border-radius: 4px;
+    border-style: ridge;
+}
+
+.btn:hover {
+    border-color: var(--border-color);
+    transition: all .3s ease-in-out;
+
+}
+
+#section2::before {
+    content: "";
+    background: url('../img/section_bgs/section_2_heroes_full3.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 153%;
+    width: 100%;
+    top: 950px;
+    left: 0px;
+    box-shadow: inset -10px -10px 90px 100px black;
+}
+
+#section2 div .span {
+    color: white;
+    text-align: center;
+    position: relative;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    text-shadow: 0px 0px 10px black;
+    /* padding-bottom: 0px; */
+    /* z-index: 40; */
+    /* width: 100%;   */
+}
+
+
+
+#section2 div #span-1 {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    margin: 3px 0px 3px -2px;
+    padding-top: 800px;
+    font-size: 3.5rem;
+    opacity: .7;
+    line-height: 0%;
+
+}
+
+#section2 #content_after_choose_heroes {
+    font-family: 'Noto Serif', serif;
+    color: var(--content-color);
+    display: flex;
+    text-align: center;
+    margin-top: 43px;
+    padding: 0px 20%;
+    font-size: 15px;
+    justify-content: center;
+    text-shadow: 0px 0px 10px black;
+}
+
+#section2 div #span-2 {
+    color: var(--content-color);
+    font-size: 7rem;
+    line-height: 90%;
+
+
+}
+
+#role-2 {
+    border-top: 4px solid var(--border-color);
+    margin-left: 47%;
+    margin-top: 0px;
+    border-radius: 30px;
+    position: relative;
+    display: inline-block;
+    width: 6%;
+
+}
+
+#section2 .standard_btn {
+    border: 3px solid rgba(255, 255, 255, 0.534);
+    border-radius: 3px;
+    padding: 15px 25px;
+    margin: 40px auto;
+    display: flex;
+    cursor: pointer;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    transition-duration: .2s;
+    font-weight: 100px;
+}
+
+#section2 .standard_btn {
+    color: white;
+}
+
+#section2 .standard_btn:hover {
+    border-color: var(--border-color);
+    transition: all .3s ease-in-out;
+}
+
+#heroes #heroes_container {
+    
+    box-sizing: border-box;
+    margin: auto;
+    /* padding: 100px; */
+    /* margin: 3px 0px 3px -2px; */
+    font-family: 'Averia Serif Libre', cursive;
+    width: 80%;
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 20%, black 80%, transparent 100%);
+    justify-items: center;
+    margin-top: 77px;
+
+    
+}
+
+#heroes .lines .itemHeroes{
+    /* border: 4px solid red; */
+    margin-left: 10%;
+    margin-right: 10%;
+    border: 20%;
+    padding-top: 0px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-shadow: inset 0px 1px 186px 97px black;
+    padding: 54px 0px;
+    top: -36px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    z-index: 50;
+}
+
+#heroes #heroes_container .box {
+    margin: 1px 1px;
+    z-index: 0;
+    cursor: pointer;
+}
+
+#heroes img {
+    /* border: 2px solid red; */
+    width: 230px;
+
+    /* margin: 3px 4px; */
+
+}
+
+#heroes .lines .scrolling .first_line .itemHeroes_first_line{
+    animation: scroll_first 25s linear infinite;
+    display: inline-block;
+    position: relative;
+    width: 48.%;   
+    align-items: center;
+}
+
+#heroes .lines .scrolling .second_line .itemHeroes_second_line{
+    animation: scroll_second 25s linear infinite;
+    display: inline-block;
+    position: relative; 
+    width: 48.%;   
+    align-items: center;
+
+}
+
+#heroes .lines .scrolling .third_line .itemHeroes_third_line{
+    animation: scroll_third 25s linear infinite;
+    display: inline-block;
+    position: relative; 
+    width: 48.%;   
+    align-items: center;
+
+}
+
+#heroes .lines .scrolling .fourth_line .itemHeroes_fourth_line{
+    animation: scroll_fourth 25s linear infinite;
+    display: inline-block;
+    position: relative; 
+    width: 48.%;   
+    align-items: center;
+
+}
+
+#heroes .lines .scrolling {
+    width: 200%;
+    left: -100%;
+    margin: -5.2px;
+    height: 142px;
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+
+}
+
+#heroes .lines .scrolling .box{
+    display: inline-block; /* Display images in a row */
+    height: auto; /* Adjust the height as needed */
+    width: 230px; /* Adjust the width as needed */
+}
+
+@keyframes scroll_first {
+    0% {
+        transform: translateX(calc(130px* 8));
+    }
+    100% {
+        transform: translateX(calc(-(130px* 9))); /* Adjust the percentage to control the scrolling speed */
+    }
+  }
+@keyframes scroll_second {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(130px* 9)); /* Adjust the percentage to control the scrolling speed */
+    }
+  }
+@keyframes scroll_third {
+    0% {
+        transform: translateX(calc(130px* 8));
+    }
+    100% {
+        transform: translateX(calc(-(130px* 9))); /* Adjust the percentage to control the scrolling speed */
+    }
+  }
+@keyframes scroll_fourth {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(130px* 9)); /* Adjust the percentage to control the scrolling speed */
+    }
+  }

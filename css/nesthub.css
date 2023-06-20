@@ -1,0 +1,338 @@
+
+#navbar {
+    display: flex;
+    position: absolute;
+    top: 10px;
+    left: 70px;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 1300px;
+    /* line-height: 400%; */
+    box-shadow: inset 75px 48px 322px 52px black;
+}
+
+#home::before {
+    content: "";
+    background: url('../img/radiant_dire5.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    z-index: -2;
+    opacity: 1;
+}
+
+/* Utility classes */
+#home h1 {
+    color: rgb(246, 241, 222);
+    text-align: center;
+    margin: 2px;
+    font-size: 4.5rem;
+    text-shadow: 0px 0px 20px black;
+}
+
+#home h3 {
+    color: rgb(255, 254, 254);
+    opacity: .8;
+    margin: 2px;
+    text-align: center;
+    font-size: 2.3rem;
+    text-shadow: 0px 0px 20px black;
+}
+
+.h-primary {
+    /* font-size: 3.5rem; */
+    /* padding: 20px; */
+}
+
+p {
+    font-family: 'Noto Serif', serif;
+    color: var(--content-color);
+    text-align: center;
+    margin-top: 3px;
+    font-size: 1em;
+    /* width: 50%; */
+    text-shadow: 0px 0px 10px black;
+
+}
+
+#home #role-1 {
+    border-top: 4px solid var(--border-color);
+    margin: 9px 3px 10px 10px;
+    border-radius: 30px;
+    display: inline-block;
+    width: 6%;
+
+}
+
+
+#home div {
+
+    width: 70%;
+}
+
+.btn {
+    color: white;
+    margin-top: 7px;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px 20px;
+    font-size: 1.7rem;
+    background-color: transparent;
+    border: 3px solid rgb(146, 145, 145);
+    border-radius: 4px;
+    border-style: ridge;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.btn:hover {
+    border-color: var(--border-color);
+    transition: all .3s ease-in-out;
+
+}
+
+/* Darksection */
+/* #darksection{
+    width: 100%;
+    height: 200px;
+    color: black;
+    box-shadow: 70px 199px 100px 90px black;
+    position: absolute;
+    top: 507px;
+    z-index: 2;
+} */
+
+/* Section2 */
+
+#section2::before {
+    content: "";
+    background: url('../img/section_bgs/section_2_heroes_full3.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 139%;
+    width: 100%;
+    top: 837px;
+    left: 0px;
+    box-shadow: inset -10px -10px 90px 100px black;
+}
+
+#section2 div .span {
+    color: white;
+    text-align: center;
+    position: relative;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    text-shadow: 0px 0px 10px black;
+    /* padding-bottom: 0px; */
+    /* z-index: 40; */
+    /* width: 100%;   */
+}
+
+
+
+#section2 div #span-1 {
+    padding-top: 340px;
+    font-size: 2.5rem;
+    opacity: .7;
+    line-height: 0%;
+
+}
+
+#section2 #content_after_choose_heroes {
+    font-family: 'Noto Serif', serif;
+    color: var(--content-color);
+    display: flex;
+    text-align: center;
+    margin-top: 13px;
+    padding: 0px 20%;
+    font-size: 15px;
+    justify-content: center;
+    text-shadow: 0px 0px 10px black;
+}
+
+#section2 div #span-2 {
+    color: var(--content-color);
+    font-size: 5rem;
+    line-height: 90%;
+
+
+}
+
+#role-2 {
+    border-top: 4px solid var(--border-color);
+    margin-left: 47%;
+    margin-top: 0px;
+    border-radius: 30px;
+    position: relative;
+    display: inline-block;
+    width: 6%;
+
+}
+
+#section2 .standard_btn {
+    border: 3px solid rgba(255, 255, 255, 0.534);
+    border-radius: 3px;
+    padding: 15px 25px;
+    margin: 40px auto;
+    display: flex;
+    cursor: pointer;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    transition-duration: .2s;
+    font-weight: 100px;
+}
+
+#section2 .standard_btn {
+    color: white;
+}
+
+#section2 .standard_btn:hover {
+    border-color: var(--border-color);
+    transition: all .3s ease-in-out;
+}
+
+
+
+/* Heroes */
+
+/* #heroes::before{
+    content: "";
+
+    /* display: flex;
+    z-index: -2;
+}*/
+
+#heroes #heroes_container {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 31px;
+    margin: 3px 0px 3px -2px;
+    font-family: 'Averia Serif Libre', cursive;
+}
+
+#heroes .lines {
+    /* border: 4px solid red; */
+    margin-left: 10%;
+    margin-right: 10%;
+    border: 20%;
+    position: relative;
+    display: flex;
+    padding-top: 0px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-shadow: inset 0px 1px 186px 97px black;
+    padding: 54px 0px;
+    top: -36px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    z-index: 50;
+}
+
+#heroes #first_line {
+    display: flex;
+    /* flex-wrap: wrap; */
+    position: relative;
+    /* flex-direction: row; */
+    align-items: center;
+    animation-name: scroll_homepage;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    /* flex-direction: column; */
+
+
+
+
+    /* box-shadow: inset 10px 10px 100px 100px black; */
+}
+
+#heroes #second_line {
+    display: flex;
+    position: relative;
+    /* flex-wrap: wrap; */
+    /* flex-direction: row; */
+    align-items: center;
+    animation-name: scroll_homepage;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    /* flex-direction: column; */
+
+
+    
+}
+
+#heroes #third_line {
+    display: flex;
+    /* flex-wrap: wrap; */
+    position: relative;
+    /* flex-direction: row; */
+    align-items: center;
+    animation-name: scroll_homepage;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    /* flex-direction: column; */
+
+
+}
+
+#heroes #fourth_line {
+    display: flex;
+    /* flex-wrap: wrap; */
+    position: relative;
+    /* flex-direction: row; */
+    align-items: center;
+    animation-name: scroll_homepage;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    /* flex-direction: column; */
+
+
+}
+
+#heroes #first_line {
+    /* flex-direction: column; */
+    align-items: center;
+    height: 89px;
+    animation-name: scroll_homepage;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
+
+/* @keyframes scroll {
+    0% {
+        left: 0;
+        right: 0;
+    } 
+
+    100% {
+
+        left: 100%;
+    } */
+
+
+#heroes #heroes_container .box {
+    margin: 3px 3px;
+    z-index: 0;
+}
+
+
+
+#heroes img {
+    /* border: 2px solid red; */
+    width: 144px;
+    /* margin: 3px 4px; */
+
+}
